@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from './components/Navbar/Navbar';
+import Post from './components/Post/Post';
 
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
+      <Post></Post>
     </div>
   );
 }
