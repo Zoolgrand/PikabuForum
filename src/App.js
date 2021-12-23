@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import User from './components/User/User';
+import Forum from './components/Forum/Forum';
 function App() {
   const [isActive, setIsActive] = useState(false);
   return (
     <div className="App">
-      <User />
+    <Forum/>
     </div>
   );
 }

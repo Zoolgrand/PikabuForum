@@ -2,22 +2,22 @@ import user from "../../images/user.svg";
 import upvote from "../../images/upvote.svg";
 import downvote from "../../images/downvote.svg";
 import "./Post.css";
-function Post() {
+function Post(props) {
   return (
     <div className="post">
       <div className="post-header">
         <div className="post-header-left">
           <div className="rating">
             <img className="upvote" src={upvote} alt="upvote"></img>
-            <h5 className="post-rating">300</h5>
+            <h5 className="post-rating">{props.upvotes-props.downvotes}</h5>
             <img className="downvote" src={downvote} alt="downvote"></img>
           </div>
           <div className="post-info">
             <div className="user">
               <img className="user-avatar" src={user} alt="avatar"></img>
-              <h4 className="nickname">Nickname</h4>
+              <h4 className="nickname">{props.user}</h4>
             </div>
-            <h2 className="post-title">Title1</h2>
+            <h2 className="post-title">{props.title}</h2>
           </div>
         </div>
         <div className="post-header-right">
@@ -26,8 +26,7 @@ function Post() {
       </div>
       <div className="post-body">
         <h3>
-          Иногда для достижения целей приходится идти на разумные жертвы. Что
-          если на этот раз кто-то решил пожертвовать мной?
+       {props.body}
         </h3>
       </div>
     </div>
