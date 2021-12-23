@@ -1,11 +1,10 @@
-import Modal from './components/Modal/Modal';
 import { useState } from 'react';
+import User from './components/User/User';
 function App() {
   const [isActive, setIsActive] = useState(false);
   return (
     <div className="App">
-      {/* <button onClick={()=>setIsActive(true)}>show</button> */}
-      <Modal isActive={isActive} setIsActive={setIsActive} />
+      <User />
     </div>
   );
 }
