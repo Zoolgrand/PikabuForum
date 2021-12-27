@@ -3,7 +3,7 @@ import upvote from "../../images/upvote.svg";
 import downvote from "../../images/downvote.svg";
 import "./Post.css";
 function Post(props) {
-  return (
+  return (<div className="post-wrap">
     <div className="post">
       <div className="post-header">
         <div className="post-header-left">
@@ -29,7 +29,19 @@ function Post(props) {
        {props.body}
         </h3>
       </div>
+
+       
+
+
     </div>
+
+     <div className="tags">
+     <p className="tag">Кот</p>
+     <p className="tag">Политика</p>
+     <p className="tag">Текст</p>
+   </div>
+
+   </div>
   );
 }
 export default Post;

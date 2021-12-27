@@ -1,0 +1,99 @@
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    margin-top: 120px;
+    position: fixed;
+    transform: translateX(200%);
+}
+
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.user-sidebar-avatar {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.user-sidebar {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-midle h1 {
+    margin: 0px;
+}
+
+.sidebar-midle {
+    margin: 10px 0px;
+    border: black solid 1px;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar {
+    background-color: #cce8d4;
+    width: 300px;
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+}
+
+.sidebar-button-logout {
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+}
+
+.sidebar-button-logout:hover {
+    box-shadow: 0px 0px 6px 3px rgba(255, 0, 0, 0.7);
+}
+
+.add-post-button:hover {
+    box-shadow: 0px 0px 6px 3px rgba(0, 0, 255, 0.7);
+}
+
+.add-post-button {
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+}
+
+.sidebar-bot {
+    margin-bottom: 5px;
+}
+
+.user-sidebar h2 {
+    margin: 0px;
+}
+
+.sidebar-top h2 {
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.sidebar-logout {
+    margin-top: 5px;
+}
+
+.wrap-for-border {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}

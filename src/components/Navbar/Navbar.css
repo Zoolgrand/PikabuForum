@@ -3,9 +3,11 @@
     padding: 15px;
     display: flex;
     flex: 3 1 auto;
-    justify-content: space-between;
+    justify-content: space-around;
     background: darkseagreen;
     height: 85px;
+    position: fixed;
+    width: 100vw;
 }
 
 .navbarleft {
@@ -23,7 +25,6 @@
     align-items: center;
     justify-content: end;
 }
-
 
 .logo {
     height: 100px;

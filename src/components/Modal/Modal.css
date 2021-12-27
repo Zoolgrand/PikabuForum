@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
 }
 
 .disabled {
@@ -23,7 +24,7 @@
     padding-top: 50px;
 }
 
-.post-title {
+.modal-post-title {
     width: 250px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -32,7 +33,7 @@
 
 }
 
-.post-body {
+.modal-post-body {
     width: 250px;
     margin-bottom: 40px;
     border-radius: 10px;

@@ -4,9 +4,9 @@ import MainPage from './pages/MainPage'
 import UserPage from './pages/UserPage';
 import PageNotFound from './pages/PageNotFound';
 import {Routes, Route} from 'react-router-dom'
+import SideBar from './components/SideBar/SideBar';
 
 function App() {
-  const [isActive, setIsActive] = useState(false);
   return (
     <div className="App">
       <Routes>

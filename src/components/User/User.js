@@ -1,6 +1,6 @@
 import './User.css';
-import Post from '../Post/Post';
 import user from '../../images/avatar.png';
+import Forum from '../Forum/Forum';
 function User() {
   return (
     <div className="wrap">
@@ -12,9 +12,7 @@ function User() {
         <h3 className="user-info">Posts 5</h3>
         <h3 className="user-info">Reputation 100</h3>
       </div>
-      <Post />
-      <Post />
-      <Post />
+     <Forum/>
     </div>
   );
 }

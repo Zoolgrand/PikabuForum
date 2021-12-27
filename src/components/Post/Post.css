@@ -1,33 +1,9 @@
-.user-avatar {
-    height: 20px;
-    margin-right: 5px;
-}
-
-.upvote {
-    height: 30px;
-    transition: 0.5s;
-}
-
-.upvote:hover {
-    box-shadow: 0px 0px 8px 8px rgba(25, 255, 91, 0.7);
-}
-
-.downvote {
-    height: 30px;
-    transition: 0.5s;
-}
-
-.downvote:hover {
-    box-shadow: 0px 0px 8px 8px rgba(255, 8, 8, 0.7);
-}
-
 .post {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 600px;
-    margin: 15px;
     background-color: #cce8d4;
 }
 
@@ -37,6 +13,7 @@
     width: 100%;
     border: 1px solid cornflowerblue;
     border-radius: 5px;
+    margin-bottom: 1px;
 }
 
 .post-header-left {
@@ -60,8 +37,9 @@
 }
 
 .post-title {
-    margin: 0px;
+    margin-top: 1px;
     width: auto;
+    margin-bottom: 10px;
 }
 
 .rating {
@@ -84,4 +62,59 @@
     border: 1px solid cornflowerblue;
     border-radius: 5px;
     width: 580px;
+}
+
+.tags {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 600px;
+    margin-top: 1px;
+    background-color: #cce8d4;
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+
+}
+
+.tag {
+    margin: 5px;
+    background-color: grey;
+    padding: 3px;
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+    font-weight: lighter;
+    color: white;
+}
+
+.post-wrap {
+    margin: 15px;
+    width: 600px;
+    transition: 0.3s;
+}
+
+.post-wrap:hover {
+    box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.7);
+}
+
+.user-avatar {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.upvote {
+    height: 30px;
+    transition: 0.5s;
+}
+
+.upvote:hover {
+    box-shadow: 0px 0px 8px 8px rgba(25, 255, 91, 0.7);
+}
+
+.downvote {
+    height: 30px;
+    transition: 0.5s;
+}
+
+.downvote:hover {
+    box-shadow: 0px 0px 8px 8px rgba(255, 8, 8, 0.7);
 }
