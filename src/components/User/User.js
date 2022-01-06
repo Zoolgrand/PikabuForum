@@ -5,7 +5,7 @@ function User() {
   return (
     <div className="wrap">
       <div className="user-top">
-        <img className="avatar" src={user}></img>
+        <img className="avatar" src={user} alt='user'></img>
         <h1 className="user-page-nickname">Nickname</h1>
       </div>
       <div className="user-bot">

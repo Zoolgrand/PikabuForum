@@ -1,9 +1,20 @@
 import './SideBar.css';
 import user from '../../images/user.svg';
+import { useDispatch } from 'react-redux';
+import { removeUser } from '../../store/slices/userSlice';
+import { useNavigate } from 'react-router-dom';
+
 function SideBar({ isActive, setIsActive }) {
-  
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   function AddPostHandler() {
     setIsActive(true);
+  }
+
+  function logoutHandler() {
+    dispatch(removeUser());
+    navigate('/login');
   }
 
   return (
@@ -18,7 +29,11 @@ function SideBar({ isActive, setIsActive }) {
           <h2>Rating:3000</h2>
         </div>
         <div className="sidebar-logout">
-          <button className="sidebar-button-logout" type="button">
+          <button
+            className="sidebar-button-logout"
+            type="button"
+            onClick={logoutHandler}
+          >
             Logout
           </button>
         </div>
