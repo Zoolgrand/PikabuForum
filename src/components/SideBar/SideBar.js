@@ -13,6 +13,7 @@ function SideBar({ isActive, setIsActive }) {
   }
 
   function logoutHandler() {
+    localStorage.clear();
     dispatch(removeUser());
     navigate('/login');
   }
