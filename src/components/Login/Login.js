@@ -11,7 +11,7 @@ import logo from '../../images/logo.png';
 import './Login.css';
 
 function Login() {
-  
+
   const  navigate  = useNavigate();
   const dispatch = useDispatch();
 
@@ -24,6 +24,10 @@ function Login() {
       .then(({ user }) => {
         console.log(user);
 
+        localStorage.setItem('email', user.email)
+        localStorage.setItem('uid', user.uid)
+        localStorage.setItem('token', user.accessToken)
+
         dispatch(
           setUser({
             email: user.email,
@@ -31,11 +35,6 @@ function Login() {
             token: user.accessToken,
           })
         );
-
-        localStorage.setItem('email', user.email)
-        localStorage.setItem('uid', user.uid)
-        localStorage.setItem('token', user.accessToken)
-
         navigate('/');
       })
       .catch((e) => console.log('wrong credential '));
@@ -47,6 +46,10 @@ function Login() {
       .then(({ user }) => {
         console.log(user);
 
+        localStorage.setItem('email', user.email)
+        localStorage.setItem('uid', user.uid)
+        localStorage.setItem('token', user.accessToken)
+
         dispatch(
           setUser({
             email: user.email,
@@ -54,11 +57,6 @@ function Login() {
             token: user.accessToken,
           })
         );
-
-        localStorage.setItem('email', user.email)
-        localStorage.setItem('uid', user.uid)
-        localStorage.setItem('token', user.accessToken)
-
         navigate('/');
       })
       .catch((e) => console.log('already exist'));
