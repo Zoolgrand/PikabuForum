@@ -7,6 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setUser } from '../src/store/slices/userSlice';
+import { getAuth } from 'firebase/auth';
 
 function App() {
   const dispatch = useDispatch();
@@ -23,10 +24,14 @@ function App() {
 
   //check if user exist in local storage
   useEffect(() => {
+
+    const auth = getAuth();
+
     let localUserEmail = localStorage.getItem('email');
     let localUserID = localStorage.getItem('uid');
     let localUserToken = localStorage.getItem('token');
     if (localUserID) {
+
       dispatch(
         setUser({
           email: localUserEmail,

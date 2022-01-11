@@ -30,6 +30,7 @@
     border-radius: 5px;
     border: none;
     font-size: 1.5em;
+    padding-top: 10px;
 
 }
 
@@ -49,4 +50,12 @@
     border-radius: 10px;
     color: white;
     background: green;
+}
+.modal-post-tags{
+    width: 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    padding-top: 5px;
 }

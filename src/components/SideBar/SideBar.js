@@ -8,7 +8,7 @@ function SideBar({ isActive, setIsActive }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  function AddPostHandler() {
+  function ShowModalAddHandler() {
     setIsActive(true);
   }
 
@@ -48,7 +48,7 @@ function SideBar({ isActive, setIsActive }) {
         <button
           className="add-post-button"
           type="button"
-          onClick={AddPostHandler}
+          onClick={ShowModalAddHandler}
         >
           Add Post
         </button>
